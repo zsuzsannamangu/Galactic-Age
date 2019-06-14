@@ -10,5 +10,5 @@ export function getEarthAge(dob) {
 }
 
 export function getMercAge(dob) {
-  return getMercAge;
+  return parseInt((getEarthAge(dob) / 0.24).toFixed(0));
 }

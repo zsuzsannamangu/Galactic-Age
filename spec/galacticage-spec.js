@@ -1,4 +1,5 @@
 import { getEarthAge } from './../src/galactic-age';
+import { getMercAge } from './../src/galactic-age';
 
 describe('getEarthAge', function() {
 
