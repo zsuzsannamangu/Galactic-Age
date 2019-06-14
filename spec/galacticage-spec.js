@@ -8,4 +8,10 @@ describe('getEarthAge', function() {
     expect(age).toEqual(34);
   });
 
+  it('should correctly count the months and not just the years to return Earth age', function() {
+    let dob = new Date('2018-09-01')
+    let age = getEarthAge(dob)
+    expect(age).toEqual(0);
+  });
+
 });
