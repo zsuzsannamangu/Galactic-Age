@@ -16,8 +16,7 @@ describe('getEarthAge', function() {
 });
 
 describe('getMercAge', function() {
-
-  it('should correctly return age in Mercury years', function() {
+  it('should take a person’s birthday and correctly return age in Mercury years', function() {
     let dob = new Date('1985-05-05')
     let age = getMercAge(dob)
     expect(age).toEqual(142);
@@ -25,11 +24,19 @@ describe('getMercAge', function() {
 });
 
 describe('earthToPlanet', function() {
-
   it('should correctly return age in given planet years', function() {
-    let years = 34;
+    let age = 34;
     let planet = 'mercury';
-    let ratio = earthToPlanet(years, planet)
+    let ratio = earthToPlanet(age, planet)
     expect(ratio).toEqual(142);
+  });
+});
+
+describe('getAge', function() {
+  it('should take a person’s birthday and return their age in given planet years', function() {
+    let dob = new Date('1985-05-05')
+    let planet = 'mercury';
+    let age = getAge(dob)
+    expect(age).toEqual(142);
   });
 });
