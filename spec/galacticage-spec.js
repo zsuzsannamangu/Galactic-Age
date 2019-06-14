@@ -1,7 +1,7 @@
 import { getEarthAge } from './../src/galactic-age';
-import { getMercAge } from './../src/galactic-age';
 import { earthToPlanet } from './../src/galactic-age';
 import { getAge } from './../src/galactic-age';
+import { getEarthLife } from './../src/galactic-age';
 
 describe('getEarthAge', function() {
   it('should take a person’s birthday and return their age in Earth years', function() {
@@ -31,5 +31,14 @@ describe('getAge', function() {
     let planet = 'mercury';
     let age = getAge(dob, planet)
     expect(age).toEqual(142);
+  });
+});
+
+describe('getEarthLife', function() {
+  it('should take life expectancy and return years left to live on Earth', function() {
+    let years = 90;
+    let dob = new Date('1985-05-05')
+    let life = getEarthLife(years, dob)
+    expect(life).toEqual(56);
   });
 });
