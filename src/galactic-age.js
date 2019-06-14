@@ -1,3 +1,11 @@
+// const planetRatio = {
+//   'mercury': 0.24,
+//   'venus': 0.62,
+//   'earth': 1.0,
+//   'mars': 1.88,
+//   'jupiter': 11.86
+// }
+
 export function getEarthAge(dob) {
   let currentDate = new Date();
   let birthDate = new Date(dob);
