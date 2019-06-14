@@ -26,7 +26,7 @@ _This application takes a person's age in Earth years and returns their age in M
   * _eslint and eslint loader_ - to check for errors and typos (we need the loader as well to use the linter with Webpack)
   * _uglifyjs-webpack-plugin_ - to minify our code to the bare minimum so our page loads faster
   * _clean-webpack-plugin_ - to clean up our dist folder as it's getting cluttered
-  * _css-loader and style-loader - to transform our CSS into JavaScript code so Webpack can bundle it
+  * _css-loader and style-loader_ - to transform our CSS into JavaScript code so Webpack can bundle it
   * _jquery, popper.js and bootstrap_- to develop the front end of our application
   * _html-webpack-plugin_ - to use Webpack to generate HTML files
   * _jasmine-core and Jasmine_ - Jasmine is a JavaScript testing framework to write tests
