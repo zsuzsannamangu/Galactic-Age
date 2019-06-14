@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Super Galactic Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="age-calculator">
+        <form id="age-calculator-form">
+          <label for="dob">Enter your birthday:</label>
+          <input id="dob" type="date" value="2019-06-12" min="1900-01-01" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+          <span class="validity"></span>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="solution">
+          <p>Your age in Earth years is <span class="x-age"></span>.</p>
+          <p>Your age in Mercury years is <span class="me-age"></span>.</p>
+          <p>Your age in Venus years is <span class="ve-age"></span>.</p>
+          <p>Your age in Mars years is <span class="ma-age"></span>.</p>
+          <p>Your age in Jupiter years is <span class="ju-age"></span>.</p>
+        </div>
+      </div>
+      <div class="years-calculator">
+        <form id="years-calculator-form">
+          <label for="life-expectancy">Enter your life expectancy:</label>
+          <input id="life-expectancy" type="number" min="1" max="300" required>
+          <span class="validity"></span>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="solution2">
+          <p>You have <span class="x-years"></span> years left to live on Earth in Earth years.</p>
+          <p>You have <span class="me-years"></span> years left to live on Mercury in Mercury years.</p>
+          <p>You have <span class="ve-years"></span> years left to live on Venus in Venus years.</p>
+          <p>You have <span class="ma-years"></span> years left to live on Mars in Mars years.</p>
+          <p>You have <span class="ju-years"></span> years left to live on Jupiter in Jupiter years.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
