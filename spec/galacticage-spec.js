@@ -35,17 +35,15 @@ describe('getAge', function() {
 });
 
 describe('getLife', function() {
-  it('should take life expectancy and return years left to live on any planet in given planet years', function () {
+  it('should take life expectancy and return years left to live on any planet in given planet years - Venus', function () {
     let number = 90;
     let dob = new Date('1985-05-05');
     let planet = 'venus';
     let life = getLife(number, dob, planet);
     expect(life).toEqual(90);
   });
-});
 
-describe('getLife', function() {
-  it('should take life expectancy and return years left to live on any planet in given planet years', function () {
+  it('should take life expectancy and return years left to live on any planet in given planet years - Mars', function () {
     let number = 90;
     let dob = new Date('1985-05-05');
     let planet = 'mars';
