@@ -43,10 +43,10 @@ _This application takes a person's age in Earth years and returns their age in M
 | Take a person’s birthday and return their age in Mars years. (A Mars year is 1.88 Earth years.) | 05/05/1985 | 18 |
 | Take a person’s birthday and return their age in Jupiter years. (A Jupiter year is 11.86 Earth years.) | 05/05/1985 | 3 |
 | Take a person's life expectancy and return how many years a user has left on Earth. | 90 | 56 |
-| Take a person's life expectancy and return how many years a user has lived past life expectancy on Mercury. | 90 | 52 |
-| Take a person's life expectancy and return how many years a user has left on Venus. | 90 | 35 |
-| Take a person's life expectancy and return how many years a user has left on Mars. | 90 | 72 |
-| Take a person's life expectancy and return how many years a user has left on Jupiter. | 90 | 87 |
+| Take a person's life expectancy and return how many years a user has left on Mercury. | 90 | 233 |
+| Take a person's life expectancy and return how many years a user has left on Venus. | 90 | 90 |
+| Take a person's life expectancy and return how many years a user has left on Mars. | 90 | 30 |
+| Take a person's life expectancy and return how many years a user has left on Jupiter. | 90 | 5 |
 
 ## Objectives
 

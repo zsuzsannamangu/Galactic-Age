@@ -1,7 +1,7 @@
 const planetRatio = {
+  'earth': 1.0,
   'mercury': 0.24,
   'venus': 0.62,
-  'earth': 1.0,
   'mars': 1.88,
   'jupiter': 11.86
 }
@@ -17,8 +17,8 @@ export function getEarthAge(dob) {
   return earthAge;
 }
 
-export function earthToPlanet(age, planet) {
-  return parseInt((age / planetRatio[planet]).toFixed(0));
+export function earthToPlanet(number, planet) {
+  return parseInt((number / planetRatio[planet]).toFixed(0));
 }
 
 export function getAge(dob, planet) {
@@ -27,4 +27,8 @@ export function getAge(dob, planet) {
 
 export function getEarthLife(years, dob) {
   return years - getEarthAge(dob);
+}
+
+export function getLife(number, dob, planet) {
+  return earthToPlanet(number, planet) - earthToPlanet(getEarthAge(dob), planet);
 }

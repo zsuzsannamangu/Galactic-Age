@@ -19,9 +19,9 @@ describe('getEarthAge', function() {
 
 describe('earthToPlanet', function() {
   it('should correctly return age in given planet years', function() {
-    let age = 34;
+    let number = 34;
     let planet = 'mercury';
-    let ratio = earthToPlanet(age, planet);
+    let ratio = earthToPlanet(number, planet);
     expect(ratio).toEqual(142);
   });
 });
@@ -46,10 +46,10 @@ describe('getEarthLife', function() {
 
 describe('getLife', function() {
   it('should take life expectancy and return years left to live on any planet in given planet years', function () {
-    let years = 90;
+    let number = 90;
     let dob = new Date('1985-05-05');
     let planet = 'venus';
-    let life = getLife(years, dob, planet);
+    let life = getLife(number, dob, planet);
     expect(life).toEqual(90);
   });
 });
