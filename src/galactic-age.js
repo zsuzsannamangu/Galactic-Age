@@ -8,3 +8,7 @@ export function getEarthAge(dob) {
   }
   return earthAge;
 }
+
+export function getMercAge(dob) {
+  return getMercAge;
+}

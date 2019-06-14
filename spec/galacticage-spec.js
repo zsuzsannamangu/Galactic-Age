@@ -15,3 +15,12 @@ describe('getEarthAge', function() {
   });
 
 });
+
+describe('getMercAge', function() {
+
+  it('should correctly return age in Mercury years', function() {
+    let dob = new Date('1985-05-05')
+    let age = getMercAge(dob)
+    expect(age).toEqual(142);
+  });
+});
