@@ -17,10 +17,6 @@ export function getEarthAge(dob) {
   return earthAge;
 }
 
-export function getMercAge(dob) {
-  return parseInt((getEarthAge(dob) / 0.24).toFixed(0));
-}
-
 export function earthToPlanet(age, planet) {
   return parseInt((age / planetRatio[planet]).toFixed(0));
 }
