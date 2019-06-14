@@ -25,10 +25,6 @@ export function getAge(dob, planet) {
   return earthToPlanet(getEarthAge(dob), planet);
 }
 
-export function getEarthLife(years, dob) {
-  return years - getEarthAge(dob);
-}
-
 export function getLife(number, dob, planet) {
   return earthToPlanet(number, planet) - earthToPlanet(getEarthAge(dob), planet);
 }
