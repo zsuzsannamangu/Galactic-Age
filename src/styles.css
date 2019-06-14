@@ -1,11 +1,30 @@
 .solution {
   display: none;
+  margin-top: 1vh;
 }
 
 .solution2 {
   display: none;
+  margin-top: 1vh;
 }
 
 .years-calculator {
   display: none;
+}
+
+label {
+  display: inline-block;
+  width: 250px;
+  margin-top: 4vh;
+  font-size: 20px;
+}
+
+input:invalid+span:after {
+    content: '✖';
+    padding-left: 5px;
+}
+
+input:valid+span:after {
+    content: '✓';
+    padding-left: 5px;
 }
