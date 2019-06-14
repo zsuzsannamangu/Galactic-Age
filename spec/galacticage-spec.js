@@ -2,6 +2,7 @@ import { getEarthAge } from './../src/galactic-age';
 import { earthToPlanet } from './../src/galactic-age';
 import { getAge } from './../src/galactic-age';
 import { getEarthLife } from './../src/galactic-age';
+import { getLife } from './../src/galactic-age';
 
 describe('getEarthAge', function() {
   it('should take a person’s birthday and return their age in Earth years', function() {
@@ -20,16 +21,16 @@ describe('earthToPlanet', function() {
   it('should correctly return age in given planet years', function() {
     let age = 34;
     let planet = 'mercury';
-    let ratio = earthToPlanet(age, planet)
+    let ratio = earthToPlanet(age, planet);
     expect(ratio).toEqual(142);
   });
 });
 
 describe('getAge', function() {
   it('should take a person’s birthday and return their age in given planet years', function() {
-    let dob = new Date('1985-05-05')
+    let dob = new Date('1985-05-05');
     let planet = 'mercury';
-    let age = getAge(dob, planet)
+    let age = getAge(dob, planet);
     expect(age).toEqual(142);
   });
 });
@@ -37,8 +38,18 @@ describe('getAge', function() {
 describe('getEarthLife', function() {
   it('should take life expectancy and return years left to live on Earth', function() {
     let years = 90;
-    let dob = new Date('1985-05-05')
-    let life = getEarthLife(years, dob)
+    let dob = new Date('1985-05-05');
+    let life = getEarthLife(years, dob);
     expect(life).toEqual(56);
+  });
+});
+
+describe('getLife', function() {
+  it('should take life expectancy and return years left to live on any planet in given planet years', function () {
+    let years = 90;
+    let dob = new Date('1985-05-05');
+    let planet = 'venus';
+    let life = getLife(years, dob, planet);
+    expect(life).toEqual(90);
   });
 });
